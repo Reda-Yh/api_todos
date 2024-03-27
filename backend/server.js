@@ -17,6 +17,11 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+// Route de test pour vérifier que l'API fonctionne
+app.get('/', (req, res) => {
+    res.send('API is working perfectly!');
+});
+
 // Routes
 app.use('/api/goals', goalRoutes);
 app.use('/api/users', userRoutes);
