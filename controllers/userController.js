@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 import asyncHandler from 'express-async-handler';
-import User from '../models/userModel.js'; // Assurez-vous que le chemin est correct
+import User from '../../models/userModel.js'; // Assurez-vous que le chemin est correct
 
 // Enregistrer un utilisateur
 const registerUser = asyncHandler(async (req, res) => {

@@ -1,6 +1,6 @@
 import asyncHandler from 'express-async-handler';
-import Goal from '../models/goalModel.js';
-import User from '../models/userModel.js';
+import Goal from '../../models/goalModel.js';
+import User from '../../models/userModel.js';
 
 // Récupération des objectifs
 const getGoals = asyncHandler(async (req, res) => {
